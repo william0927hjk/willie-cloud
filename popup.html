@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudPlay</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <svg class="popup-logo" viewBox="0 0 48 48" width="24" height="24">
+        <defs>
+          <linearGradient id="popupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6c63ff"/>
+            <stop offset="100%" style="stop-color:#00d4ff"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#popupGrad)" d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 28V16l14 8-14 8z"/>
+      </svg>
+      <span class="popup-title">CloudPlay</span>
+    </div>
+
+    <div class="popup-status">
+      <span class="status-indicator online"></span>
+      <span>Cloud servers online</span>
+    </div>
+
+    <div class="popup-section">
+      <h3>Quick Launch</h3>
+      <div class="quick-games">
+        <div class="quick-game" data-title="Cyber Odyssey 2077">
+          <div class="quick-icon" style="background: linear-gradient(135deg, #6c63ff44, #6c63ff11);">CO</div>
+          <span>Cyber Odyssey</span>
+        </div>
+        <div class="quick-game" data-title="Shadow Legends">
+          <div class="quick-icon" style="background: linear-gradient(135deg, #ff475744, #ff475711);">SL</div>
+          <span>Shadow Legends</span>
+        </div>
+        <div class="quick-game" data-title="Galaxy Racers">
+          <div class="quick-icon" style="background: linear-gradient(135deg, #00d4ff44, #00d4ff11);">GR</div>
+          <span>Galaxy Racers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Cloud Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-value">42ms</span>
+          <span class="stat-label">Latency</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">120 FPS</span>
+          <span class="stat-label">Stream</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">1440p</span>
+          <span class="stat-label">Quality</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="popup-open-btn" id="openDashboard">
+      Open Dashboard
+    </button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
